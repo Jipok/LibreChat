@@ -1,5 +1,5 @@
 # Base node image
-FROM node:18-alpine AS node
+FROM docker.io/node:18-alpine AS node
 
 COPY . /app
 WORKDIR /app

@@ -46,7 +46,7 @@ version: '3.4'
 
 # # ADD MONGO-EXPRESS
 #   mongo-express:
-#     image: mongo-express
+#     image: docker.io/mongo-express
 #     container_name: mongo-express
 #     environment:
 #       ME_CONFIG_MONGODB_SERVER: mongodb
@@ -60,14 +60,14 @@ version: '3.4'
 
 # # USE MONGODB V4.4.18 - FOR OLDER CPU WITHOUT AVX SUPPORT
 #   mongodb:
-#     image: mongo:4.4.18
+#     image: docker.io/mongo:4.4.18
 
 # # DISABLE THE MONGODB CONTAINER - YOU NEED TO SET AN ALTERNATIVE MONGODB URI IN THE .ENV FILE
 #   api:
 #     environment:
 #       - MONGO_URI=${MONGO_URI}
 #   mongodb:
-#     image: tianon/true
+#     image: docker.io/tianon/true
 #     command: ""
 #     entrypoint: ""
 

@@ -28,7 +28,7 @@ services:
       - ./logs:/app/api/logs
   mongodb:
     container_name: chat-mongodb
-    image: mongo
+    image: docker.io/mongo
     restart: always
     user: "${UID}:${GID}"
     volumes:
@@ -36,7 +36,7 @@ services:
     command: mongod --noauth
   meilisearch:
     container_name: chat-meilisearch
-    image: getmeili/meilisearch:v1.5
+    image: docker.io/getmeili/meilisearch:v1.5
     restart: always
     user: "${UID}:${GID}"
     environment:
